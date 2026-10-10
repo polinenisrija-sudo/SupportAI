@@ -1,0 +1,15 @@
+# One-click deploy on Render: dashboard -> New -> Blueprint -> pick this repo.
+# Builds the existing Dockerfile (API + dashboard + widget, models pre-downloaded).
+services:
+  - type: web
+    name: supportai
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: SUPPORTAI_SECRET
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false   # optional: paste in the Render dashboard to enable Claude answers
