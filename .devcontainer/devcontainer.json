@@ -1,0 +1,16 @@
+{
+  "name": "SupportAI",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" }
+  },
+  "postCreateCommand": "pip install -r backend/requirements.txt && cd frontend && npm ci && npm run build",
+  "postStartCommand": "cd backend && nohup python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 > /tmp/supportai.log 2>&1 &",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "SupportAI", "onAutoForward": "openBrowser", "visibility": "public" }
+  },
+  "secrets": {
+    "ANTHROPIC_API_KEY": { "description": "Optional. Enables Claude-written answers and the LLM judge." }
+  }
+}

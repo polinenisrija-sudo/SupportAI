@@ -1,0 +1,18 @@
+[
+  {"question": "How much does standard shipping cost?", "expected_answer": "Standard shipping costs $5.95 and takes 3-5 business days.", "answerable": true},
+  {"question": "Do you offer free shipping?", "expected_answer": "Orders over $75 qualify for free standard shipping within the contiguous United States.", "answerable": true},
+  {"question": "How long do international orders take?", "expected_answer": "International orders take 7-14 business days with a flat $24.95 shipping fee.", "answerable": true},
+  {"question": "What is the return window?", "expected_answer": "You may return most new, unused items within 30 days of delivery for a full refund.", "answerable": true},
+  {"question": "Can I return a used sleeping bag?", "expected_answer": "Used sleeping bags cannot be returned for hygiene and safety reasons.", "answerable": true},
+  {"question": "How long until I get my refund?", "expected_answer": "Refunds are issued to your original payment method within 5-7 business days after we receive your return.", "answerable": true},
+  {"question": "What does the backpack warranty cover?", "expected_answer": "A limited lifetime warranty against defects in materials and workmanship such as broken zippers, torn seams and failed buckles.", "answerable": true},
+  {"question": "How long is the tent warranty?", "expected_answer": "Tents carry a 2-year warranty covering waterproofing failure, pole breakage and seam failure.", "answerable": true},
+  {"question": "How do I reset my password?", "expected_answer": "Select Forgot Password on the login page and enter your email; the reset link expires after 30 minutes.", "answerable": true},
+  {"question": "Which payment methods do you accept?", "expected_answer": "Visa, Mastercard, American Express, Discover, PayPal, Apple Pay and Google Pay.", "answerable": true},
+  {"question": "Until when can I cancel my order?", "expected_answer": "Orders can be changed or cancelled within 1 hour of being placed.", "answerable": true},
+  {"question": "When is customer support available?", "expected_answer": "Monday to Friday, 8 AM to 6 PM Mountain Time.", "answerable": true},
+  {"question": "How do I wash my down sleeping bag?", "expected_answer": "Wash in a front-loading machine with a down-specific cleaner on a gentle cycle and tumble dry on low heat with tennis balls.", "answerable": true},
+  {"question": "Do you ship to Mars?", "expected_answer": "", "answerable": false},
+  {"question": "Who is the CEO of Northwind?", "expected_answer": "", "answerable": false},
+  {"question": "Do you have a physical store in Paris?", "expected_answer": "", "answerable": false}
+]

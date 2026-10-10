@@ -1,0 +1,13 @@
+services:
+  supportai:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Optional: set a key to switch from offline extractive answers to Claude-generated, cited answers.
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      SUPPORTAI_SECRET: ${SUPPORTAI_SECRET:-change-me-in-production}
+    volumes:
+      - supportai-data:/data
+volumes:
+  supportai-data:
